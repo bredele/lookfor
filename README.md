@@ -24,7 +24,10 @@ search.run('red');
 <div data-search="red"></div>
 ```
 
+## Todo
 
+  - [] support IE8
+  - [] do standalone library
    
 
 ## License
