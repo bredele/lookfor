@@ -1,0 +1,14 @@
+{
+  "name": "search",
+  "repo": "leafs/search",
+  "description": "CSS query selector search engine",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
