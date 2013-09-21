@@ -21,7 +21,7 @@ search.run('red');
 
 
 ```html
-<div data-search="red"></div>
+<div class="searchable" data-search="red"></div>
 ```
 
 ## Todo
