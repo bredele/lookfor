@@ -1,7 +1,7 @@
 search
 ======
 
-CSS query selector search engine
+CSS query selector search engine (inspired by this [article](http://redotheweb.com/2013/05/15/client-side-full-text-search-in-css.html))
 
 
 ## Installation
