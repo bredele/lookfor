@@ -28,5 +28,9 @@ function Search(namespace){
 
 Search.prototype.run = function(value, className) {
   var searchable = className || 'searchable';
-  this.style.innerHTML = "." + searchable + ":not([data-search*=\'" + value + "']) { display: none; }";
+  var query = "";
+  if(value) {
+    query = "." + searchable + ":not([data-search*=\'" + value + "']) { display: none; }";
+  }
+  this.style.innerHTML = query;
 };
