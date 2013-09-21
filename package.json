@@ -1,0 +1,33 @@
+{
+  "name": "search",
+  "version": "0.0.0",
+  "description": "CSS query selector search engine",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leafs/search.git"
+  },
+  "keywords": [
+    "css",
+    "filter",
+    "search",
+    "query",
+    "selector"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "bb413c22c29bbd7832ebf5e547d850eff2266aba",
+  "bugs": {
+    "url": "https://github.com/leafs/search/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0"
+  }
+}

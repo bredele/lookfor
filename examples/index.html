@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full text css search</title>
+  <style>
+  .container {
+    width:90%;
+    margin:0 5%;
+  }
+
+  .red {
+    color:red;
+  }
+  .green {
+    color:green;
+  }
+  .orange {
+    color:orange;
+  }
+  .blue {
+    color:blue;
+  }
+  </style>
+</head>
+<body class="container">
+  <input class="search-input" type="text" placeholder="search by name or color">
+  <ul>
+    <li class="searchable red" data-search="olivierred">Olivier</li>
+    <li class="searchable red" data-search="ericred">Eric</li>
+    <li class="searchable green" data-search="markgreen">Mark</li>
+    <li class="searchable orange" data-search="amitorange">Amit</li>
+    <li class="searchable green" data-search="ericgreen">Eric</li>
+    <li class="searchable blue" data-search="ashleyblue">Ashley</li>
+    <li class="searchable blue" data-search="gavinblue">Gavin</li>
+    <li class="searchable red" data-search="troyred">Troy</li>
+    <li class="searchable blue" data-search="cayleblue">Cayle</li>
+  </ul>
+  <script src="../build/build.js"></script>
+  <script>
+    var Search = require('search');
+    var search = new Search();
+    var input = document.querySelector('.search-input');
+
+    input.addEventListener('input', function(){
+      search.run(input.value);
+    });
+
+  </script>
+</body>
+</html>
