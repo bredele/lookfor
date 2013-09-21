@@ -26,8 +26,8 @@ search.run('red');
 
 ## Todo
 
-- [ ] support IE8
-- [ ] do standalone library
+- support IE8
+- do standalone library
    
 
 ## License
