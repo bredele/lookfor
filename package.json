@@ -1,6 +1,6 @@
 {
   "name": "lookfor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Client-side full-text search using CSS and built for speed",
   "main": "index.js",
   "directories": {

@@ -2,7 +2,7 @@
   "name": "lookfor",
   "repo": "bredele/lookfor",
   "description": "Client-side full-text search using CSS and built for speed.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [],
   "dependencies": {},
   "development": {
