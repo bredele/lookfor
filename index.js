@@ -1,36 +1,43 @@
 
 /**
- * Expose 'search'
+ * Expose 'lookfor'
  */
 
-module.exports = Search;
+module.exports = function() {
+
+	/**
+	 * Stylesheet.
+	 * 
+	 * @type {Element}
+	 * @api private
+	 */
+	
+	var style = document.createElement('style');
 
 
-/**
- * Search constructor.
- * @param {String} namespace
- * @api public
- */
+	// append style 
 
-function Search(namespace){
-  this.namespace = namespace || "search";
-  this.style = document.createElement('style');
-  document.head.appendChild(this.style);
-}
+	document.head.appendChild(style);
 
 
-/**
- * Run search.
- * @param {String} value
- * @param {string} className
- * @api public
- */
+	/**
+	 * Hide every dom element which 
+	 * doesn't contain the passed
+	 * value.
+	 *
+	 * Examples:
+	 *
+	 *   search('red');
+	 *   
+	 * @return {String} value
+	 * @api public
+	 */
+	
+	return function(value) {
+		// NOTE" classname and dataset should be configurable
+		if(!value) return;
+		style.innerHTML = ".searchable:not([data-search*=\'" + value + "']) { display: none; }";
+	};
 
-Search.prototype.run = function(value, className) {
-  var searchable = className || 'searchable';
-  var query = "";
-  if(value) {
-    query = "." + searchable + ":not([data-search*=\'" + value + "']) { display: none; }";
-  }
-  this.style.innerHTML = query;
 };
+

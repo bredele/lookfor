@@ -1,7 +1,7 @@
 {
   "name": "lookfor",
   "repo": "bredele/lookfor",
-  "description": "CSS query selector search engine",
+  "description": "Client-side full-text search using CSS and built for speed.",
   "version": "0.1.0",
   "keywords": [],
   "dependencies": {},
