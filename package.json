@@ -1,9 +1,10 @@
 {
-  "name": "search",
+  "name": "lookfor",
   "version": "0.1.0",
   "description": "CSS query selector search engine",
   "main": "index.js",
   "directories": {
+    "example": "examples",
     "test": "test"
   },
   "scripts": {
@@ -11,23 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bredele/search.git"
+    "url": "https://github.com/bredele/lookfor.git"
   },
   "keywords": [
-    "css",
-    "filter",
     "search",
-    "query",
-    "selector"
+    "autocomplete",
+    "query"
   ],
-  "author": "Olivier Wietrich",
-  "license": "BSD",
-  "readmeFilename": "README.md",
-  "gitHead": "bb413c22c29bbd7832ebf5e547d850eff2266aba",
+  "author": "Olivier Wietrich <olivier.wietrich@gmail.com> (http://github.com/bredele)",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bredele/search/issues"
+    "url": "https://github.com/bredele/lookfor/issues"
   },
-  "devDependencies": {
-    "mocha": "~1.13.0"
-  }
+  "homepage": "https://github.com/bredele/lookfor"
 }

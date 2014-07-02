@@ -1,6 +1,6 @@
 {
-  "name": "search",
-  "repo": "bredele/search",
+  "name": "lookfor",
+  "repo": "bredele/lookfor",
   "description": "CSS query selector search engine",
   "version": "0.1.0",
   "keywords": [],
