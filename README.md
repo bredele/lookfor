@@ -6,7 +6,14 @@ CSS query selector search engine (inspired by this [article](http://redotheweb.c
 
 ## Installation
 
-    $ component install leafs/search
+with component:
+
+    $ component install bredele/search
+
+with nodejs:
+
+    $ npm install search
+
 
 ## Usage
 

@@ -1,6 +1,6 @@
 {
   "name": "search",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "CSS query selector search engine",
   "main": "index.js",
   "directories": {
