@@ -34,9 +34,10 @@ module.exports = function() {
 	 */
 	
 	return function(value) {
+		var query = ".searchable:not([data-search*=\'" + value + "']) { display: none; }";
 		// NOTE" classname and dataset should be configurable
-		if(!value) return;
-		style.innerHTML = ".searchable:not([data-search*=\'" + value + "']) { display: none; }";
+		if(!value) query = '';
+		style.innerHTML = query;
 	};
 
 };

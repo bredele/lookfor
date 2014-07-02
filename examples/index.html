@@ -38,12 +38,11 @@
   </ul>
   <script src="../build/build.js"></script>
   <script>
-    var Search = require('search');
-    var search = new Search();
+    var search = require('lookfor')();
     var input = document.querySelector('.search-input');
 
     input.addEventListener('input', function(){
-      search.run(input.value);
+      search(input.value);
     });
 
   </script>
