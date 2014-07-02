@@ -1,0 +1,21 @@
+{
+  "name": "lookfor",
+  "main": "lookfor.js",
+  "version": "0.1.1",
+  "homepage": "https://github.com/bredele/search",
+  "authors": [
+    "bredele <olivier.wietrich@gmail.com>"
+  ],
+  "moduleType": [
+    "globals",
+    "amd",
+    "node"
+  ],
+  "description": "Client-side full-text search using CSS and built for speed.",
+  "keywords": [
+    "search",
+    "css",
+    "query"
+  ],
+  "license": "MIT"
+}
