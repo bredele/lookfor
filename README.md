@@ -1,4 +1,4 @@
-search
+look for
 ======
 
   Client-side full-text search using CSS and built for speed.
