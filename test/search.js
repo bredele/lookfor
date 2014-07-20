@@ -13,7 +13,9 @@ function displayed(el) {
 	return window.getComputedStyle(el).display;
 }
 
-describe('Full text search', function(){
+
+describe('Full text search', function() {
+
 	var list, red, blue, green;
 	beforeEach(function() {
 		list = document.createElement('ul');
@@ -42,6 +44,5 @@ describe('Full text search', function(){
     assert.equal(displayed(blue), 'none');
     assert.equal(displayed(green), 'none');
   });
-
 
 });

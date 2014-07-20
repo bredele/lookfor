@@ -3,7 +3,7 @@
  * Expose 'lookfor'
  */
 
-module.exports = function() {
+module.exports = function(el) {
 
 	/**
 	 * Stylesheet.
@@ -17,7 +17,7 @@ module.exports = function() {
 
 	// append style 
 
-	document.head.appendChild(style);
+	(el || document.head).appendChild(style);
 
 
 	/**
