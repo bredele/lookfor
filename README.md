@@ -16,7 +16,6 @@ with nodejs:
 
 ## Usage
 
-
   `lookfor` uses dataset (`data-search`) to index dom elements...
 
 ```html
@@ -49,6 +48,15 @@ search('boop');
 ```
 
   The browser does all the work and won't trigger unnecessary repain/relayout mechanism.
+
+
+## Web components
+
+  `lookfor` can be used to performed a full-text search in a web component. It's easy you just has to pass the web component host element (`el`):
+
+```js
+var search = require('lookfor')(el);
+```
 
 ## License
 
