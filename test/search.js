@@ -9,6 +9,10 @@ function  create(str, el) {
 	return li;
 }
 
+function displayed(el) {
+	return window.getComputedStyle(el).display;
+}
+
 describe('Full text search', function(){
 	var list, red, blue, green;
 	beforeEach(function() {
@@ -20,23 +24,23 @@ describe('Full text search', function(){
 		green = create('btngreen', list);
 	});
 
-	
+
   it('should return multiple results', function() {
     var search = lookfor();
     search('btn');
 
-    assert.notEqual(window.getComputedStyle(red).display, 'none');
-    assert.equal(window.getComputedStyle(blue).display, 'none');
-    assert.notEqual(window.getComputedStyle(green).display, 'none');
+    assert.notEqual(displayed(red), 'none');
+    assert.equal(displayed(blue), 'none');
+    assert.notEqual(displayed(green), 'none');
   });
 	
   it('should return a single result', function() {
     var search = lookfor();
     search('red');
 
-    assert.notEqual(window.getComputedStyle(red).display, 'none');
-    assert.equal(window.getComputedStyle(blue).display, 'none');
-    assert.equal(window.getComputedStyle(green).display, 'none');
+    assert.notEqual(displayed(red), 'none');
+    assert.equal(displayed(blue), 'none');
+    assert.equal(displayed(green), 'none');
   });
 
 
